@@ -26,6 +26,12 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundColor: Colors.grey,
+              backgroundImage: AssetImage('assets/logo.jpg'),
+            ),
+            SizedBox(height: 20),
             Text(
               'MusiCalm',
               style: TextStyle(
@@ -41,7 +47,6 @@ class _SplashScreenState extends State<SplashScreen> {
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
-                fontFamily: 'Montserrat',
               ),
             ),
           ],
