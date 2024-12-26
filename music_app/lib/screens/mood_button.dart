@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'song_recommendation_page.dart'; // Import the page for navigation
+import 'song_recommendation_page.dart';
 
 class MoodButton extends StatelessWidget {
   final String mood;
@@ -18,11 +18,13 @@ class MoodButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
       onPressed: () {
-        // Navigate to the SongRecommendationPage and pass the mood
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SongRecommendationPage(mood: mood),
+            builder: (context) => SongRecommendationPage(
+              mood: mood,
+              moodColor: color,
+            ),
           ),
         );
       },

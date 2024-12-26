@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 20), // Space between logo and text
+            SizedBox(height: 20),
             Text(
               'What is your vibe today?',
               style: TextStyle(
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 40), // Add some spacing below the text
+            SizedBox(height: 40),
             Expanded(
               child: ListView(
                 children: [
